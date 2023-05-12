@@ -3,6 +3,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 :root{
@@ -10,6 +11,7 @@
     --headerfooterC: #2F3136;
     --fontC: #ffffff;
     --fonthoverC: #2b6d99;
+    --calcPrev: rgb(165, 165, 165);
 }
 
 body{
@@ -28,7 +30,7 @@ header{
 
 main{
     min-width: 350px;
-    max-width: 600px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -37,12 +39,67 @@ main section{
     padding: 10px;
 }
 
+article.show{
+    display: none;
+}
+
+.calcStyle{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 60px);
+}
+
+.calcStyle > button {
+    cursor: pointer;
+    font-size: 20px;
+    border: 1px, solid aliceblue;
+    outline: none;
+    background-color: var(--bodyC);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    color: aliceblue;
+  }
+
+.calcStyle > button:hover {
+    color: var(--fonthoverC);
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+
+.output{
+    grid-column: 1 / -1;
+    position: relative;
+    height: 90px;
+    width: 395px;
+    background-color: var(--bodyC);
+    background-size: 100% 100%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.output .prev-operand{
+    color: var(--calcPrev);
+    font-size: 1.5rem;
+}
+
+.output .curr-operand{
+    color: var(--fontC);
+    font-size: 2rem;
+}
+
 .square{
     text-align: center;
-    background-color: aliceblue;
-    color: black;
+    background-color: var(--headerfooterC);
     padding: 10px;
-    width: 350px;
+    width: 550px;
     border-radius: 10px;
     margin: auto;
     margin-top: 20px;
@@ -51,10 +108,6 @@ main section{
 }
 
 footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
     background-color: var(--headerfooterC);
     color: var(--fontC);
     padding: 10px;
