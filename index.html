@@ -14,11 +14,10 @@
     <main>
         <section>
             <h2>Simples Math Programms</h2>
-            <div class="square" onclick="showOp()">
-                <h3 class="h3">Calculator</h3>
-                <article class="show">
+            <div class="square" onclick="showCalc()">
+                <h3 id="h3-1">Calculator</h3>
+                <article id="show1">
                     <div class="calcStyle">
-                        
                         <div class="output">
                             <div data-previous-operand class="prev-operand"></div>
                             <div data-current-operand class="curr-operand"></div>
@@ -44,27 +43,35 @@
                     </div>
                 </article>
             </div>
-            <div class="square">
-                <h3>Multiplication Table</h3>
-                <article>
-
+            <div class="square" onclick="showMultiT()">
+                <h3 id="h3-2">Multiplication Table</h3>
+                <article id="show2">
+                    <div>
+                        <p><input type="text" id="txtNumberMulti" placeholder="Write a number"></p>
+                        <p><button id="buttonMulti" onclick="multiT()">Find</button></p>
+                    </div>
+                    <div id="multiTable">
+                        <select name="multiTab" id="multiTab" size="10"></select>
+                    </div>
                 </article>
             </div>
         </section>
         <section>
             <h2>Mini-Games</h2>
-            <div class="square">
+            <div class="square" onclick="showOp()">
                 <h3>TicTacToe</h3>
-                <article>
+                <article id="show3">
 
                 </article>
             </div>
         </section>
     </main>
     <footer>
-        <p>Made by <a href="https://github.com/Math-Z" target="_blank">Math-Z</a></p>
+        <p>Made by <a href="https://github.com/Math-Z" target="_blank">Math-Z</a> &copy;</p>
     </footer>
     <script src="codes/calc.js"></script>
-    <script src="codes/showop.js"></script>
+    <script src="codes/showCalc.js"></script>
+    <script src="codes/multiT.js"></script>
+    <script src="codes/showMultiT.js"></script>
 </body>
 </html>

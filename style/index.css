@@ -26,6 +26,8 @@ header{
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 main{
@@ -39,7 +41,7 @@ main section{
     padding: 10px;
 }
 
-article.show{
+article#show1, article#show2{
     display: none;
 }
 
@@ -107,11 +109,61 @@ article.show{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.589);
 }
 
+#txtNumberMulti{
+    border: none;
+    appearance: none;
+    outline: none;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--fontC);
+    height: 60px;
+    width: 395px;
+    border-radius: 10px;
+    background-color: var(--bodyC);
+
+}
+
+::placeholder{
+    color: var(--calcPrev);
+    text-align: center;
+}
+
+#buttonMulti{
+    cursor: pointer;
+    font-size: 20px;
+    border: 1px, solid aliceblue;
+    outline: none;
+    background-color: var(--bodyC);
+    margin: 15px;
+    padding: 5px;
+    width: 395px;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+#buttonMulti:hover{
+    color: var(--fonthoverC);
+}
+
+select#multiTab{
+    width: 395px;
+    font-size: 1rem;
+    padding: 5px;
+    text-align: center;
+    background-color: var(--bodyC);
+    color: var(--fontC);
+    border-radius: 10px;
+    overflow-y: hidden;
+}
+
 footer{
     background-color: var(--headerfooterC);
     color: var(--fontC);
     padding: 10px;
     text-align: center;
+    font-style: italic;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 footer a{
