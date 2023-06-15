@@ -11,7 +11,16 @@
     <header>
         <h1>Mini JS Website</h1>
     </header>
+
     <main>
+        <section id="about">
+            <h2>About</h2>
+            <div class="square">
+                <p>I made this simple website to practice my HTML5/CSS3 and JS skills.</p>
+                <p>Most of the programms are simple math problems.</p>
+                <p>I'm also trying to do some mini-games like TicTacToe just for fun.</p>
+            </div>
+        </section>
         <section>
             <h2>Simples Math Programms</h2>
             <div class="square" onclick="showCalc()">
@@ -43,6 +52,7 @@
                     </div>
                 </article>
             </div>
+
             <div class="square" onclick="showMultiT()">
                 <h3 id="h3-2">Multiplication Table</h3>
                 <article id="show2">
@@ -55,23 +65,47 @@
                     </div>
                 </article>
             </div>
+
+            <div class="square" onclick="showBhaskara()">
+                <h3 id="h3-3">Bhaskara</h3>
+                <article id="show3">
+                    <div>
+                        <p><input type="text" id="bhas-a" placeholder="Value of a"></p>
+                        <p><input type="text" id="bhas-b" placeholder="Value of b"></p>
+                        <p><input type="text" id="bhas-c" placeholder="Value of c"></p>
+                        <p><button id="buttonBhas" onclick="bhaskara()">Find</button></p>
+                    </div>
+                    <div id="bhas-res">
+                        <select name="BhaskaraResults" id="bhasTable" size="3"></select>
+                    </div>
+                </article>
+            </div>
         </section>
+
         <section>
             <h2>Mini-Games</h2>
             <div class="square" onclick="showOp()">
                 <h3>TicTacToe</h3>
-                <article id="show3">
-
+                <article id="show4">
+                    <div>
+                        
+                    </div>
                 </article>
             </div>
         </section>
     </main>
+
     <footer>
-        <p>Made by <a href="https://github.com/Math-Z" target="_blank">Math-Z</a> &copy;</p>
+        <p>Made by <a href="https://github.com/Math-Z" target="_blank">Math-Z</a></p>
     </footer>
+
     <script src="codes/calc.js"></script>
     <script src="codes/showCalc.js"></script>
+
     <script src="codes/multiT.js"></script>
     <script src="codes/showMultiT.js"></script>
+
+    <script src="codes/Bhaskara.js"></script>
+    <script src="codes/showBhas.js"></script>
 </body>
 </html>

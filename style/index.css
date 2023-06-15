@@ -41,7 +41,11 @@ main section{
     padding: 10px;
 }
 
-article#show1, article#show2{
+section#about p{
+    padding: 5px;
+}
+
+article#show1, article#show2, article#show3{
     display: none;
 }
 
@@ -145,6 +149,10 @@ article#show1, article#show2{
     color: var(--fonthoverC);
 }
 
+div#multiTable{
+    margin-bottom: 10px;
+}
+
 select#multiTab{
     width: 395px;
     font-size: 1rem;
@@ -154,6 +162,49 @@ select#multiTab{
     color: var(--fontC);
     border-radius: 10px;
     overflow-y: hidden;
+}
+
+input#bhas-a, input#bhas-b, input#bhas-c{
+    border: none;
+    appearance: none;
+    outline: none;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--fontC);
+    height: 60px;
+    width: 395px;
+    border-radius: 10px;
+    background-color: var(--bodyC);
+    margin-bottom: 5px;
+}
+
+button#buttonBhas{
+    cursor: pointer;
+    font-size: 20px;
+    border: 1px, solid aliceblue;
+    outline: none;
+    background-color: var(--bodyC);
+    margin: 15px;
+    padding: 5px;
+    width: 395px;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+#buttonBhas:hover{
+    color: var(--fonthoverC);
+}
+
+select#bhasTable{
+    width: 395px;
+    font-size: 1rem;
+    padding: 5px;
+    text-align: center;
+    background-color: var(--bodyC);
+    color: var(--fontC);
+    border-radius: 10px;
+    overflow-y: hidden;
+    margin-bottom: 15px;
 }
 
 footer{
