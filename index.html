@@ -13,16 +13,19 @@
     </header>
 
     <main>
+        <!--Exaplanation of what this site is.-->
         <section id="about">
             <h2>About</h2>
             <div class="square">
-                <p>I made this simple website to practice my HTML5/CSS3 and JS skills.</p>
+                <p>I made this simple website to practice my HTML5/CSS3 and JS skills,<br> but mainly JS since I'm already familiar with the others.</p>
                 <p>Most of the programms are simple math problems.</p>
                 <p>I'm also trying to do some mini-games like TicTacToe just for fun.</p>
             </div>
         </section>
+        <!--Simple mathematical problem solvers.-->
         <section>
-            <h2>Simples Math Programms</h2>
+            <h2>Simples Math</h2>
+            <!--First one is a calculator.-->
             <div class="square" onclick="showCalc()">
                 <h3 id="h3-1">Calculator</h3>
                 <article id="show1">
@@ -53,6 +56,7 @@
                 </article>
             </div>
 
+            <!--Second one is the multiplication table.-->
             <div class="square" onclick="showMultiT()">
                 <h3 id="h3-2">Multiplication Table</h3>
                 <article id="show2">
@@ -66,6 +70,7 @@
                 </article>
             </div>
 
+            <!--Third one is a bhaskara solver.-->
             <div class="square" onclick="showBhaskara()">
                 <h3 id="h3-3">Bhaskara</h3>
                 <article id="show3">
@@ -73,7 +78,7 @@
                         <p><input type="text" id="bhas-a" placeholder="Value of a"></p>
                         <p><input type="text" id="bhas-b" placeholder="Value of b"></p>
                         <p><input type="text" id="bhas-c" placeholder="Value of c"></p>
-                        <p><button id="buttonBhas" onclick="bhaskara()">Find</button></p>
+                        <p><button id="buttonBhas" onclick="funcBhaskara()">Find</button></p>
                     </div>
                     <div id="bhas-res">
                         <select name="BhaskaraResults" id="bhasTable" size="3"></select>
@@ -84,11 +89,23 @@
 
         <section>
             <h2>Mini-Games</h2>
-            <div class="square" onclick="showOp()">
-                <h3>TicTacToe</h3>
+            <div class="square" onclick="showTTT()">
+                <h3 id="h3-4">TicTacToe</h3>
                 <article id="show4">
-                    <div>
-                        
+                    <div id="mainTTT">
+                        <p id="statusTextTTT"></p>
+                        <div id="cellContainerTTT">
+                            <div cellIndex="0" class="cell"></div>
+                            <div cellIndex="1" class="cell"></div>
+                            <div cellIndex="2" class="cell"></div>
+                            <div cellIndex="3" class="cell"></div>
+                            <div cellIndex="4" class="cell"></div>
+                            <div cellIndex="5" class="cell"></div>
+                            <div cellIndex="6" class="cell"></div>
+                            <div cellIndex="7" class="cell"></div>
+                            <div cellIndex="8" class="cell"></div>
+                        </div>
+                        <button id="resetTTT">Reset</button>
                     </div>
                 </article>
             </div>
@@ -105,7 +122,10 @@
     <script src="codes/multiT.js"></script>
     <script src="codes/showMultiT.js"></script>
 
-    <script src="codes/Bhaskara.js"></script>
+    <script src="codes/bhaskara.js"></script>
     <script src="codes/showBhas.js"></script>
+
+    <script src="codes/TicTacToe.js"></script>
+    <script src="codes/showTTT.js"></script>
 </body>
 </html>

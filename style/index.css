@@ -45,7 +45,7 @@ section#about p{
     padding: 5px;
 }
 
-article#show1, article#show2, article#show3{
+article#show1, article#show2, article#show3, article#show4{
     display: none;
 }
 
@@ -205,6 +205,48 @@ select#bhasTable{
     border-radius: 10px;
     overflow-y: hidden;
     margin-bottom: 15px;
+}
+
+p#statusTextTTT{
+    padding: 10px;
+    font-size: 1.5em;
+    background-color: var(--bodyC);
+    width: 131px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+div#cellContainerTTT{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 394.5px;
+    margin: auto;
+}
+
+div.cell{
+    background-color: var(--bodyC);
+    border: 1px solid var(--fontC);
+    width: 131px;
+    height: 131px;
+    box-shadow: 0 0 0 1px;
+    line-height: 131px;
+    font-size: 5em;
+    cursor: pointer;
+}
+
+button#resetTTT{
+    cursor: pointer;
+    font-size: 20px;
+    border: 1px, solid aliceblue;
+    outline: none;
+    background-color: var(--bodyC);
+    margin: 15px;
+    padding: 5px;
+    width: 395px;
+    border-radius: 10px;
+    color: aliceblue;
+    margin-top: 20px;
 }
 
 footer{

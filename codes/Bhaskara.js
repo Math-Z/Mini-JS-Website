@@ -1,4 +1,4 @@
-function bhaskara(){
+function funcBhaskara(){
     var res = document.querySelector("div#bhas-res")
 
     let bhasTab = document.querySelector("select#bhasTable")
@@ -25,8 +25,15 @@ function bhaskara(){
         bhasTab.innerHTML = ""
 
         if(delta < 0){
+            let item1 = document.createElement('option')
+            item1.text = `Δ = ${delta}`
+            bhasTab.appendChild(item1)
+            
+            let item4 = document.createElement('option')
+            item4.text = `Since delta is < 0, there is no x.`
+            bhasTab.appendChild(item4)
 
-        }else {
+        } else{
             let item1 = document.createElement('option')
             item1.text = `Δ = ${delta}`
             bhasTab.appendChild(item1)
@@ -39,5 +46,7 @@ function bhaskara(){
             item3.text = `x2 = ${x2}`
             bhasTab.appendChild(item3)
         }
+
+        
     }
 }
