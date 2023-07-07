@@ -1,3 +1,3 @@
 # JS Website
 
-<p></p>
+<p>Link: https://math-z.github.io/Mini-JS-Website/</p>
