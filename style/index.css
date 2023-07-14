@@ -190,6 +190,10 @@ button#find-bhas{
     color: aliceblue;
 }
 
+#find-bhas:hover{
+    color: var(--fonthoverC);
+}
+
 div#bhas-res{
     width: 395px;
     height: 67px;

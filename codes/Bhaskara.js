@@ -16,7 +16,7 @@ function doBhaskara(){
 
         let delta = (b ** 2) - 4 * a * c
 
-        let deltaSR = Math.sqrt(delta)
+        let deltaSR = (delta ** (1/2))
 
         let x1 = (-b + deltaSR) / (2 * a)
         let x2 = (-b - deltaSR) / (2 * a)
