@@ -18,9 +18,9 @@ function funcBhaskara(){
 
         let deltaSR = Math.sqrt(delta)
 
-        let x1 = ((-n2) + deltaSR)/(2 * n1)
+        let x1 = (-n2 + deltaSR)/(2 * n1)
 
-        let x2 = ((-n2) - deltaSR)/(2 * n1)
+        let x2 = (-n2 - deltaSR)/(2 * n1)
 
         bhasTab.innerHTML = ""
 
