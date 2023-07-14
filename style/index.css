@@ -124,7 +124,6 @@ article#show1, article#show2, article#show3, article#show4{
     width: 395px;
     border-radius: 10px;
     background-color: var(--bodyC);
-
 }
 
 ::placeholder{
@@ -169,19 +168,19 @@ input#bhas-a, input#bhas-b, input#bhas-c{
     appearance: none;
     outline: none;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--fontC);
     height: 60px;
     width: 395px;
     border-radius: 10px;
     background-color: var(--bodyC);
-    margin-bottom: 5px;
+    margin: 5px;
 }
 
-button#buttonBhas{
+button#find-bhas{
     cursor: pointer;
     font-size: 20px;
-    border: 1px, solid aliceblue;
+    border: 1px solid aliceblue;
     outline: none;
     background-color: var(--bodyC);
     margin: 15px;
@@ -191,19 +190,17 @@ button#buttonBhas{
     color: aliceblue;
 }
 
-#buttonBhas:hover{
-    color: var(--fonthoverC);
-}
-
-select#bhasTable{
+div#bhas-res{
     width: 395px;
+    height: 67px;
     font-size: 1rem;
     padding: 5px;
     text-align: center;
     background-color: var(--bodyC);
     color: var(--fontC);
+    border: 1px solid var(--fontC);
     border-radius: 10px;
-    overflow-y: hidden;
+    margin: auto;
     margin-bottom: 15px;
 }
 

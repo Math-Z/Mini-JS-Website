@@ -1,5 +1,4 @@
 function multiT(){
-    var res = document.querySelector("div#multiTable")
     let txtn = document.querySelector("input#txtNumberMulti")
     let tab = document.querySelector("select#multiTab")
 
